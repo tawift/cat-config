@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: websvr
     password: ^c5JzmY*kE
-    url: jdbc:mysql://172.16.253.162:3306/cat?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://116.62.143.18:3306/cat?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
   freemarker:
     allow-request-override: false
     allow-session-override: false
