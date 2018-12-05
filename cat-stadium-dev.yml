@@ -1,0 +1,34 @@
+server:
+  port: 4004
+#Redis cache 过期时间设置
+redis:
+  cache:
+    expiration: 3600
+
+# sleuth配置
+spring:
+  zipkin:
+    rabbitmq:
+      queue: zipkin
+  sleuth:
+    sampler:
+      percentage: 0.2
+  datasource:
+    druid:
+      name: springboots
+      driver-class-name: oracle.jdbc.OracleDriver
+      username: newfinsrv
+      password: newfinsrv
+      url: jdbc:oracle:thin:@10.1.81.11:1521:orcl
+
+pagehelper:
+    helperDialect: oracle
+    reasonable: true
+    supportMethodsArguments: true
+    pageSizeZero: true
+    params: count=countSql
+
+fdfs:
+  file-host: http://127.0.0.1:22121/
+  tracker-list:
+    - 127.0.0.1:22122
